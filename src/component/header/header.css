@@ -1,0 +1,35 @@
+.header {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 60px;
+  background-color: #f7f7f7;
+  color: #373737;
+  position: fixed;
+  top: 0;
+  left: 250px;
+  width: calc(100% - 250px);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  transition: all 0.3sease-in-out;
+  z-index: 1000;
+}
+
+.header.collapsed {
+  left: 60px;
+  width: calc(100% - 60px);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    left: 0;
+    width: 100%;
+  }
+}
